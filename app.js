@@ -16,7 +16,7 @@ app.use("/api/v1/subcription", require("./routes/subcription.route"));
 app.use("/api/v1/subcriptionName", require("./routes/subcription.name.route"));
 
 app.get("/", (req, res) => {
-  res.send("Cars hat is working");
+  res.send("Practice api is working");
 });
 
 module.exports = app;
