@@ -49,12 +49,12 @@ const ProductSchema = mongoose.Schema(
       enum: ["public", "private", "featured"],
       default: "public",
     },
-    attributes: [
-      {
-        color: String,
-        size: String,
-      },
-    ],
+    // attributes: [
+    //   {
+    //     color: String,
+    //     size: String,
+    //   },
+    // ],
     images: [
       {
         image_url: String,
