@@ -77,7 +77,9 @@ exports.getAllProducts = async (req, res, next) => {
     const pageCount = Math.ceil(totalProducts / queries.limit);
     res.status(200).json({
       status: "Success",
-      data: { totalProducts, pageCount, result },
+      totalProducts,
+      pageCount,
+      data: result,
     });
   } catch (error) {
     res.status(400).json({
