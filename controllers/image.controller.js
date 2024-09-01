@@ -3,7 +3,9 @@ const Image = require("../models/image.model");
 // Upload image
 exports.uploadedImage = async (req, res) => {
   try {
-    const path = req.file.path;
+    const pathMain = req.file.path;
+
+    const path = "https://china-to-bangla.onrender.com/" + pathMain;
 
     const result = await Image.create({ path });
 
