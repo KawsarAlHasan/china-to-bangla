@@ -4,14 +4,14 @@ const ProductSchema = mongoose.Schema(
   {
     name: {
       type: String,
-      required: [true, "Please provide a name for this product"],
+      // required: [true, "Please provide a name for this product"],
       trim: true,
       minLength: [3, "Product name must be at least 3 characters."],
       maxLength: [255, "Product name is too large"],
     },
     url_slug: {
       type: String,
-      required: true,
+      // required: true,
       unique: true,
       trim: true,
     },
@@ -31,12 +31,12 @@ const ProductSchema = mongoose.Schema(
     },
     price: {
       type: Number,
-      required: [true, "Please provide a price for this product"],
+      // required: [true, "Please provide a price for this product"],
       min: [0, "Price can't be negative"],
     },
     stock_quantity: {
       type: Number,
-      required: true,
+      // required: true,
       min: [0, "Stock quantity can't be negative"],
     },
     status: {
