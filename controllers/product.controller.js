@@ -22,12 +22,12 @@ exports.createProduct = async (req, res, next) => {
     };
 
     // Create the product with the combined data
-    // const result = await Product.create(productData);
+    const result = await Product.create(productData);
 
     res.status(200).json({
       status: "Success",
       message: "Product created Successfully",
-      // data: result,
+      data: result,
     });
   } catch (error) {
     res.status(400).json({
