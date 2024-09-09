@@ -5,16 +5,16 @@ const ProductSchema = mongoose.Schema(
     name: {
       type: String,
       // required: [true, "Please provide a name for this product"],
-      trim: true,
-      minLength: [3, "Product name must be at least 3 characters."],
-      maxLength: [255, "Product name is too large"],
+      // trim: true,
+      // minLength: [3, "Product name must be at least 3 characters."],
+      // maxLength: [255, "Product name is too large"],
     },
-    url_slug: {
-      type: String,
-      // required: true,
-      unique: true,
-      trim: true,
-    },
+    // url_slug: {
+    //   type: String,
+    //   // required: true,
+    //   unique: true,
+    //   trim: true,
+    // },
     // cat_id: {
     //   type: mongoose.Schema.Types.ObjectId,
     //   ref: "Category",
@@ -32,23 +32,23 @@ const ProductSchema = mongoose.Schema(
     price: {
       type: Number,
       // required: [true, "Please provide a price for this product"],
-      min: [0, "Price can't be negative"],
+      // min: [0, "Price can't be negative"],
     },
-    stock_quantity: {
-      type: Number,
-      // required: true,
-      min: [0, "Stock quantity can't be negative"],
-    },
-    status: {
-      type: String,
-      enum: ["active", "inactive", "deleted"],
-      default: "active",
-    },
-    visibility: {
-      type: String,
-      enum: ["public", "private", "featured"],
-      default: "public",
-    },
+    // stock_quantity: {
+    //   type: Number,
+    //   // required: true,
+    //   min: [0, "Stock quantity can't be negative"],
+    // },
+    // status: {
+    //   type: String,
+    //   enum: ["active", "inactive", "deleted"],
+    //   default: "active",
+    // },
+    // visibility: {
+    //   type: String,
+    //   enum: ["public", "private", "featured"],
+    //   default: "public",
+    // },
     // attributes: [
     //   {
     //     color: String,
